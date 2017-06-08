@@ -1,6 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import logo from './images/logo.svg'
+import Button from './atoms/Button'
+
 import './App.css';
+
+const meuClick = () => {
+  alert('click')
+}
 
 class App extends Component {
   render() {
@@ -10,8 +16,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
+        <Button text='mlk' click={meuClick}/>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          ggggostei mesmo! mlk nao tem medo de nad.
         </p>
       </div>
     );
